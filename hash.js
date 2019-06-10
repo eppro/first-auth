@@ -11,11 +11,17 @@ const jwt = require('jsonwebtoken');
 //     })
 // })
 
-const secret = 'mysecretpassword';
+// const secret = 'mysecretpassword';
 
-const user = {
-    id:1,
-    token: MD5('123456').toString()
-}
+// const user = {
+//     id:1,
+//     token: MD5('123456').toString()
+// }
 
-console.log(user)
+// console.log(user)
+
+const id = '1000';
+const secret = 'supersecret';
+
+const token = jwt.sign();
+const decodeToken = jwt.verify();
